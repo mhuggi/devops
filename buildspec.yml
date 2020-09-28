@@ -13,7 +13,7 @@ phases:
 post_build:
     commands:
       - echo cp to s3...
-      - aws s3 cp build s3://testing-arcada-devops--recursive
+      - aws s3 cp build s3://codepipeline-eu-north-1-156855624710--recursive
       - echo Build completed on `date`
 artifacts:
     files:
