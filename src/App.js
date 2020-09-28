@@ -17,7 +17,11 @@ if (getData === false) {
   )
 } else {
   return (
-    <GetJson />
+    <div>
+      <h1>Data:</h1>
+      <GetJson />
+
+    </div>
   )
 }
 }

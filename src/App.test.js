@@ -1,5 +1,5 @@
-import React from 'react';
-import { render } from '@testing-library/react';
+import React, { Component } from 'react';
+import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 
 test('Render App', () => {
@@ -12,4 +12,3 @@ test('Render hello world', () => {
   const helloWorld = getByText("Hello world");
   expect(helloWorld).toBeDefined();
 });
-
