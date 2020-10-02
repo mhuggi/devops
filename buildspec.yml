@@ -6,6 +6,7 @@ phases:
   install:
     commands:
       - yarn
+      - yarn add axios
   build:
     commands:
       - yarn build
