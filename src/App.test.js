@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { render, fireEvent } from '@testing-library/react';
+import ReactDOM from 'react-dom';
+
+import { render, fireEvent, getByText } from '@testing-library/react';
+import { act } from 'react-dom/test-utils';
 import App from './App';
 
 test('Render App', () => {
@@ -12,3 +15,12 @@ test('Render hello world', () => {
   const helloWorld = getByText("Hello world");
   expect(helloWorld).toBeDefined();
 });
+
+test('Button calls api', () => {
+  const { getByText } = render(<App />)
+  const button = getByText('Get data')
+  act(() => {
+    button.dispatchEvent(new MouseEvent('click'))
+  })
+
+})
