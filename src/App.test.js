@@ -12,7 +12,7 @@ test('Render App', () => {
 
 test('Render hello world', () => {
   const { getByText } = render(<App />);
-  const helloWorld = getByText("asd");
+  const helloWorld = getByText("Hello world");
   expect(helloWorld).toBeDefined();
 });
 
