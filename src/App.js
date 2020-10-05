@@ -7,7 +7,6 @@ function App() {
   const jsonData = () => (
     setGetData(true)
   )
-  
 if (getData === false) {
   return (
     <div className="App">
