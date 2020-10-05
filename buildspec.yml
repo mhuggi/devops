@@ -14,7 +14,7 @@ phases:
   post_build:
     commands:
       - echo cp to s3...
-      - aws s3 cp build s3://devops-app-arcada --recursive
+      - aws s3 cp build s3://devops-app-arcada/devops-app --recursive
       - echo Build completed on `date`
 artifacts:
     files:
