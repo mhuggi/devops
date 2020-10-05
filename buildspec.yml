@@ -12,6 +12,7 @@ phases:
       - yarn build
       - yarn test
 post_build:
+  build:
     commands:
       - echo cp to s3...
       - aws s3 cp build s3://devops-app-arcada--recursive
