@@ -9,9 +9,7 @@ const GetJson = () => {
         setDataSet( data )
       )
     }, [])
-    console.log(dataSet)
     const data = dataSet.map(d => <p key={d.key}>{d.key} : {d.value}</p>)
-    console.log(data)
     return (
       data
     )
