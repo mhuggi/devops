@@ -22,7 +22,7 @@ test('Button calls api', () => {
     const app = render(<App />)
     const button = app.getByText('Get data')
     fireEvent.click(button)
-    const data = app.getByText('Data:')
+    const data = app.getByText('asd:')
     expect(data).toBeDefined()
 
 
