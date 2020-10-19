@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
-import { render, fireEvent, getByText } from '@testing-library/react';
+import { render, fireEvent, getByText, waitForElement } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import App from './App';
 
@@ -18,11 +18,12 @@ test('Render hello world', () => {
   expect(helloWorld).toBeDefined();
 });
 
-test('Button calls api', () => {
+test('Button calls api', async () => {
     const app = render(<App />)
     const button = app.getByText('Get data')
     fireEvent.click(button)
-    const data = app.getByText('asd:')
+    const data = await waitForElement(() => app.getByText('5 : 5'))
+
     expect(data).toBeDefined()
 
 
