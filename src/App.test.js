@@ -20,7 +20,7 @@ test('Render hello world', () => {
 
 test('Button calls api', async () => {
     const app = render(<App />)
-    const button = app.getByText('Get data')
+    const button = app.getByText('fail test')
     fireEvent.click(button)
     const data = await waitForElement(() => app.getByText('5 : 5'))
 
