@@ -2,6 +2,8 @@
   "name": "devops",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://mhuggi.fi/devops",
+
   "dependencies": {
     "@testing-library/user-event": "^7.2.1",
     "react": "^16.13.1",
