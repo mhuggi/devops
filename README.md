@@ -9,4 +9,4 @@ APIn fungerar med lambda funktion.
 React testerna använder react test library. Testerna testar att appen laddas, text laddas in, och när man trycker på knappen så söker den datan.
 Knapp-testet är en asynkron funktion som väntar på att apin laddas in och testar efter det.
 ## Uppg 5: Build status notification
-
+Ett CloudWatch Alarm skickas till ett SNS Topic om builds/minut överstiger noll. En Lambda-funktion prenumererar på SNS topic, som i sin tur skickar ett meddelande i Discord.
