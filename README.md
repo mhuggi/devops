@@ -1,6 +1,7 @@
 # Devops projekt
 ### Grupp: Salmi Emil, Långnabba Joel, Häll Christian, Sandelin Thomas
 ## Uppg 1: Pull request pipeline
+En kontinuerlig pipeline triggas när en pull request utförs för master branchen. Sedan krävs en review av någon annan för att merge ska fungera. Merge fungerar heller inte om builden inte lyckas.
 ## Uppg 2: Codepipeline
 En kontinuerlig pipeline konfigurerat för att triggas igång på merge till vår master-branch. Denna pipeline bygger koden, som bl.a. kör våra React-test. Ifall vår applikation byggs utan fel så kopierar den vår kod och artifacts till en S3-bucket. Med denna pipeline uppnår vi en god kontinuerlig leverans när vi utvecklar våran applikation.
 Fas:
